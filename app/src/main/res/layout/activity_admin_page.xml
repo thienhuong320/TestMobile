@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Tiêu đề trang -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý bài viết"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="#000" />
+
+    <!-- LinearLayout chứa Spinner và TextView "Lọc" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:paddingBottom="16dp">
+
+        <!-- Tiêu đề "Lọc" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lọc:"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_marginEnd="8dp"
+            android:textStyle="bold" />
+        <!-- Spinner lọc theo danh mục -->
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:entries="@array/category_list" />
+    </LinearLayout>
+
+    <!-- Header cho các cột -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:background="#E0E0E0">
+
+        <!-- Tiêu đề ID -->
+        <TextView
+            android:id="@+id/headerId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:text="ID"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000" />
+
+        <!-- Tiêu đề Tiêu đề -->
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.52"
+            android:text="Tiêu đề"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000" />
+
+        <!-- Tiêu đề Danh mục -->
+        <TextView
+            android:id="@+id/headerCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Danh mục"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000" />
+
+        <!-- Tiêu đề Trạng thái -->
+        <TextView
+            android:id="@+id/headerStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Trạng thái"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFF"
+        android:elevation="4dp"
+        android:paddingTop="8dp"/>
+
+    <!-- Các nút chức năng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Thêm"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:layout_marginEnd="8dp"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:layout_marginEnd="8dp"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/logoutAdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thoát" />
+    </LinearLayout>
+</LinearLayout>

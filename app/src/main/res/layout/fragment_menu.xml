@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorBackground"
+    android:scrollbarTrackHorizontal="@android:drawable/button_onoff_indicator_off"
+    tools:context=".MenuFragment">
+
+    <!-- Wrap the LinearLayout with ScrollView to make it scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="47dp"
+                android:layout_height="46dp"
+                android:contentDescription="Logo"
+                android:src="@mipmap/logo" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="369dp"
+                android:layout_height="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/view_gradient" />
+
+            <Button
+                android:id="@+id/btn_menuTTCN"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_24"
+                android:drawableTint="@color/gray"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Đăng nhập"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:iconTint="@color/gray" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C5C5C5"
+                android:backgroundTint="#C5C5C5" />
+
+            <Button
+                android:id="@+id/btn_menuTGS"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_star_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_24"
+                android:drawableTint="@color/gray"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Tin gắn sao"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                app:iconTint="@color/gray" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C5C5C5"
+                android:backgroundTint="#C5C5C5" />
+
+            <Button
+                android:id="@+id/btn_menuDS"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_history_toggle_off_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_24"
+                android:drawableTint="@color/gray"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Đọc sau"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                app:iconTint="@color/gray" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C5C5C5"
+                android:backgroundTint="#C5C5C5" />
+
+            <Button
+                android:id="@+id/btn_menuCD"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_settings_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_24"
+                android:drawableTint="@color/gray"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Cài đặt"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                app:iconTint="@color/white" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C5C5C5"
+                android:backgroundTint="#C5C5C5" />
+
+            <Button
+                android:id="@+id/btn_menuTT"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_cloudy_snowing_24"
+                android:drawableRight="@drawable/baseline_arrow_forward_24"
+                android:drawableTint="@color/gray"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Thời tiết"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                app:iconTint="@color/gray" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#C5C5C5"
+                android:backgroundTint="#C5C5C5" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

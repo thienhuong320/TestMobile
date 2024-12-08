@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Tin nhanh VN</string>
+    <string name="api">244138885090-gof2fme3uqv20kmfnu810jontdak5roc.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="category_list">
+        <item>Tất cả</item>
+        <item>Mới nhất</item>
+        <item>Xem nhiều</item>
+        <item>Thời sự</item>
+        <item>Kinh doanh</item>
+        <item>Bất động sản</item>
+        <item>Khoa học</item>
+        <item>Giải trí</item>
+    </string-array>
+    <string-array name="category_list_edit">
+
+        <item>Mới nhất</item>
+        <item>Xem nhiều</item>
+        <item>Thời sự</item>
+        <item>Kinh doanh</item>
+        <item>Bất động sản</item>
+        <item>Khoa học</item>
+        <item>Giải trí</item>
+    </string-array>
+</resources>

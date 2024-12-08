@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FF505050</color>
+    <color name="pink">#9F234E</color>
+    <color name="teal_200">#9F234E</color>
+    <color name="teal_700">#EB749D</color>
+    <color name="background_color">#FFFFFF</color> <!-- Nền trắng -->
+    <color name="text_color">#000000</color> <!-- Chữ đen -->
+</resources>

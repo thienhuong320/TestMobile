@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/mainAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- First Row (App Header) -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:minHeight="48dp"
+            android:paddingHorizontal="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/appIcon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/logo" />
+
+                <TextView
+                    android:id="@+id/appName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/notificationIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="2dp"
+                    android:src="@drawable/baseline_notifications_24" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Second Row (Scrollable Menu) -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/menuToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@android:color/white"
+            android:paddingVertical="2dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/menuChipGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:selectionRequired="false"
+                    app:singleLine="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipLatest"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:text="Mới nhất"
+                        android:textColor="#BDBDBD"
+                        app:chipBackgroundColor="@android:color/transparent" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipQuickRead"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:text="Xem nhiều"
+                        android:textColor="#BDBDBD"
+                        app:chipBackgroundColor="@android:color/transparent" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipMyVne"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:text="Thời sự"
+                        android:textColor="#BDBDBD"
+                        app:chipBackgroundColor="@android:color/transparent" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipMostViewed"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:text="Kinh doanh"
+                        android:textColor="#BDBDBD"
+                        app:chipBackgroundColor="@android:color/transparent" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipVideo"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:text="Bất động sản"
+                        android:textColor="#BDBDBD"
+                        app:chipBackgroundColor="@android:color/transparent" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipPodcast"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:text="Khoa học"
+                        android:textColor="#BDBDBD"
+                        app:chipBackgroundColor="@android:color/transparent" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipMenu"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:text="Giải trí"
+                        android:textColor="#BDBDBD"
+                        app:chipBackgroundColor="@android:color/transparent" />
+                </com.google.android.material.chip.ChipGroup>
+            </HorizontalScrollView>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainAppBar"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/btm_nav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

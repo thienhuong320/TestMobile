@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/tin_tuc"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/tin_tuc_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Setting"
+            android:configChanges="uiMode|screenSize|screenLayout|orientation"
+            android:exported="false" />
+        <activity
+            android:name=".ThoitietActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_add_post"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPage"
+            android:exported="false" />
+        <activity
+            android:name=".Thong_tin_ca_nhan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Tin_doc_sau_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Tin_gan_sao_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".News_Detail_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+    </application>
+
+</manifest>

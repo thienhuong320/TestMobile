@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@drawable/item_background"
+    android:layout_marginBottom="8dp"
+    android:gravity="center_vertical">
+
+    <!-- ID -->
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:text="ID"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <!-- Tiêu đề bài viết -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.45"
+        android:text="Title"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <!-- Danh mục -->
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:text="Category"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <!-- Trạng thái -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:text="Status"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+</LinearLayout>

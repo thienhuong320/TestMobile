@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <!-- Nội dung cuộn -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Ảnh đại diện người dùng -->
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                tools:srcCompat="@tools:sample/avatars"
+                android:contentDescription="Ảnh đại diện"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Tên người dùng -->
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Văn A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Mô tả về người dùng -->
+
+            <!-- Thông tin liên hệ -->
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: example@example.com"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/userPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại: 0901234567"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Nút chỉnh sửa thông tin -->
+            <Button
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chỉnh sửa thông tin"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Nút đăng xuất -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng xuất"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F44336"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Nút xóa tài khoản -->
+            <Button
+                android:id="@+id/btnDeleteAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xóa tài khoản"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#D32F2F" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Thanh điều hướng nổi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:paddingHorizontal="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="Quay lại"
+            android:background="?attr/selectableItemBackground"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
